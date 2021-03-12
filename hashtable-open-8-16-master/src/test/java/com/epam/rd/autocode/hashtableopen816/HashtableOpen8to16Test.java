@@ -154,7 +154,6 @@ class HashtableOpen8to16Test {
         assertEquals(74, hashtable.search(74));
     }
 
-
     @Test
     public void testOverflow(){
         HashtableOpen8to16 hashtable = HashtableOpen8to16.getInstance();
@@ -167,8 +166,6 @@ class HashtableOpen8to16Test {
 
         hashtable.insert(16, 32);
     }
-
-
 
     static Stream<Arguments> simpleFillCases() throws IOException {
         return readTestCases("simple-fill", HashtableOpen8to16Test::readKeys);
